@@ -6,7 +6,7 @@ const app = Vue.createApp({
             message: "Hola mundo!!! desde Los confines de mis ser...."
         }
     },
-    method:{
+    method: {
         changeQuote(){
             console.log('Hola Mundo')
         } // end func

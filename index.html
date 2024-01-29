@@ -8,7 +8,7 @@
       <link rel="shortcut icon" href="WB.png">
   </head>
   <body id="body">
-  <div id="container">
+  <!-- <div id="container"> -->
       <h1 id="h1">Welcome Vue.js</h1> <br>
       <p class="text-center"> <img  src="bwx.png" alt="">
         <img src="WB.png" alt="">
@@ -17,12 +17,12 @@
       <div class="bg-dark text-center text-info" id="myApp">
           <h3> {{ quote }}</h3>
           <blockquote>{{ message }}</blockquote>
-             <button class="btn btn-info m-2" v-on:click="changeQuote">
+             <button class="btn btn-info m-2" v-on:click="changeQuote()">
                  ChangeQuote
              </button>
       </div><!-- close id myApp -->>
-
-  </div> <!-- fin de #container -->>
+    <!-- </div> -->>
+   <!-- fin de #container -->>
 
     <footer id="footer">
 
