@@ -9,8 +9,8 @@ const app = Vue.createApp({
     method:{
         changeQuote(){
             console.log('Hola Mundo')
-        }
-    }
+        } // end func
+    }// end method
 })
 
 
