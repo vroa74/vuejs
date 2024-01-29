@@ -15,8 +15,11 @@
       </p>
 
       <div class="bg-dark text-center text-info" id="myApp">
-        <h1>Hola Mundo</h1>
-        <p>Desde app.js</p>
+        <h3> {{ quote }}</h3>
+        <blockquote>{{ message }}</blockquote>
+          <button class="btn btn-info m-2" v-on:click="changeQuote">
+              ChangeQuote
+          </button>
       </div>
   </div> <!-- fin de #container -->>
     <footer id="footer">

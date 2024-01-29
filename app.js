@@ -1,9 +1,19 @@
 const app = Vue.createApp({
-    /*template:`
-    <h1>Hola Mundo</h1>
-    <p>Desde app.js</p>
-    `*/
+
+    data(){
+        return {
+            quote:'Soy batman',
+            message: "Hola mundo!!! desde Los confines de mis ser...."
+        }
+    },
+    method:{
+        changeQuote(){
+            console.log('Hola Mundo')
+        }
+    }
 })
+
+
 app.mount('#myApp')
 
 
