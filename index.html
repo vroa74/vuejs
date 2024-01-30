@@ -22,7 +22,7 @@
       <div class="bg-dark text-center text-info" id="myApp">
           <h2>Batman Quotes</h2>
           <ul>
-              <li v-for="quote in quotes">{{quote.quote}} <span class="text-danger text-"> {{quote.author}}</span> </li>
+              <li v-for="({quote,author},index) in quotes"> {{index+1}}-. {{quote}} <span class="text-danger text-"> {{author}}</span> </li>
           </ul>
   <!--
           <ul>
