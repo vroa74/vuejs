@@ -23,14 +23,11 @@ const app = Vue.createApp({
         addQuote( event){
             this.quotes.unshift({
                 quote : this.newQuote,
-
-
             })
 
         }
     }// fin del metodo addQuote
 })
-
 
 app.mount('#myApp')
 
