@@ -20,7 +20,13 @@
       </p>
 
       <div class="bg-dark text-center text-info" id="myApp">
-          <h2>Batman Quotes</h2>
+          <h2>Batman Quotes</h2> <small>{{newQuote}}</small>
+          <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Search" v-model="newQuote" v-on:keypress.enter="addQuote"><!-- https://vuejs.org/guide/essentials/event-handling.html#event-modifiers -->
+              <button class="btn btn-success" type="submit">Go</button>
+          </div>
+          <hr>
+
           <ul>
               <li v-for="({quote,author},index) in quotes"> {{index+1}}-. {{quote}} <span class="text-danger text-"> {{author}}</span> </li>
           </ul>
